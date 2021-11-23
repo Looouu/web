@@ -2,23 +2,33 @@
 <head>
 <style>
 
-.menu,.dmenu{
-list-style-type:none;
-margin:10px;
-border-radius:20px;
-}
-
 .dmenu{
+
+
+border-radius:20px;
+background-color:lightgray;
 position:absolute;
 left:20px;
-width:150px;
-top:100px;
+top:70px;
+paddind:5px;
 }
 
-.menu ul{
+.menu{
 position:absolute;
-margin:10px;
-left:30px;
+
+border-radius:20px;
+background-color:lightgray;
+left:20px;
+top:70px;
+height:50px;
+width:1000px;
+
+}
+
+
+.menu ul{
+padding:0;
+margin:0;
 }
 
 .dmenu a{
@@ -27,8 +37,13 @@ margin-bottom:10px;
 
 
 .dmenu ul{
+list-style-type:none;
+padding:0;
 margin-top:1px;
+
 }
+
+
 .menu ul,.dmenu ul{
 list-style-type:none;
 padding:10px;
@@ -68,7 +83,7 @@ background-color:lighteryellow;
 width:900px;
 height:400px;
 position:absolute;
-left:220px;
+left:210px;
 top:120px;
 
 }
@@ -86,21 +101,71 @@ margin:10px;
 }
 
 .footer{
+position:absolute;
+width:100%;
 background-color:blue;
 font-family:arial;
 font-size:14pt;
 color:white;
 text-align:center;
-margin:10px;	
-
-position:absolute;
-top:500px;
-width:1330;
+bottom:10px;
 }
+
+
+.form{
+background-color:lightgreen;
+border-radius:15px;
+box-shadow:10px 10px black;
+}
+
+.bitis{
+color:blue;
+border-radius:10px;
+padding:5px;
+margin:10px;
+background-color:lighgray;
+}
+ .bitis:hover{
+  background-color:gray;
+  color:black;
+ } 
+  
+   .mkutu{
+   background-color:white;
+   color:black;
+   border-radius:20px;
+   }
+ .mkutu:hover{
+   background-color:lightblue;
+   color:black;
+   border-radius:20px;
+   }
+
+
+.sm{
+position:absolute;
+float:clear;
+right:80px;
+top:200px;
+margin-top:5px;
+
+}
+
+.icon{
+width:50px;
+height:50px;
+}
+
+.icon:hover{
+width:100px;
+height:100px;
+}
+
 
 </style>
 </head>
-<body style=background-image:url(arkaplan.jpg);>
+<body style="background-image:url('arkaplan.jpg')";>
+
 <div class=header>
 SİNCAN İMKB MESLEKİ VE TEKNİK ANADOLU LİSESİ<br>BİLİŞİM TEKNOLOJİLERİ ALANI
 </div>
@@ -108,12 +173,12 @@ SİNCAN İMKB MESLEKİ VE TEKNİK ANADOLU LİSESİ<br>BİLİŞİM TEKNOLOJİLER�
 
 <div class="menu">
 <ul>
-<li><a href="index.html">Ana Sayfa</a>
-<li><a target=cerceve href="tablo.html">Ders Programı</a>
-<li><a target=cerceve href="galeri.html">Galeri </a> 
-<li><a target=cerceve href="alanlarimiz.html">Alanlarımız</a>
-<li><a target=cerceve href="hakkimizda.html">Hakkımızda</a>
-<li><a target=cerceve href="iletisim.html">İletişim</a>	
+   <li><a href="index.html">Ana Sayfa</a>
+   <li><a target=cerceve href="tablo.html">Ders Programı</a>
+   <li><a target=cerceve href="galeri.html">Galeri </a> 
+   <li><a target=cerceve href="alanlarimiz.html">Alanlarımız</a>
+   <li><a target=cerceve href="hakkimizda.html">Hakkımızda</a>
+   <li><a target=cerceve href="iletisim.html">İletişim</a>	
 </ul>
 </div>
 
@@ -128,22 +193,54 @@ SİNCAN İMKB MESLEKİ VE TEKNİK ANADOLU LİSESİ<br>BİLİŞİM TEKNOLOJİLER�
 
 <div class="dmenu">
 <ul>
+<li><a href="index.html">Ana Sayfa</a>
 <li><a target=cerceve href="tablo.html">Ders Programı</a>
 <li><a target=cerceve href="galeri.html">Galeri </a> 
 <li><a target=cerceve href="alanlarimiz.html">Alanlarımız</a>
 <li><a target=cerceve href="hakkimizda.html">Hakkımızda</a>
 <li><a target=cerceve href="iletisim.html">İletişim</a>	
 </ul>
+
+
+<table class="form" >
+<form>
+  <tr>
+     <td><i>Kullanıcı Adı</i>
+  <tr>
+     <td><input type="text" class="mkutu">
+  <tr>
+     <td><i>Şifre</i>
+  <tr>
+     <td><input type="password" class="mkutu">
+  <tr>
+     <td align=center><input class="bitis" type="submit" name="kyd" value="Kaydet">
+	 <input class="bitis" type="reset" name="rst" value="Temizle">
+  
+
+
+</form>
+</table>
+
+
 </div>
 
-<div class=icerik>
-<iframe name=cerceve  src="okul.jpg" width=100% height=100%>
+<div class=sm>
+<img class="icon" src="instagram.png"><br>
+<img class="icon" src="facebook.png"><br>
+<img class="icon" src="whatsapp.png"><br>
+<img class="icon" src="youtube.png">
 </div>
 
 
 
-<div class=footer>
-WEP TASARIMI VE PROGRAMLAMA DERSİ 1.DÖNEM 2.UYGULAMA SINAVI
+<div class="footer">
+WEB TASARIMI VE PROGRAMLAMA DERSİ 1.DÖNEM 2.UYGULAMA SINAVI
 </div>
+
+<div class="icerik">
+     <iframe name=cerceve  src="okul.jpg" width=100% height=100%>
+</div>
+
+
 </body>
 </html>
