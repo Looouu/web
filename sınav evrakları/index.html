@@ -1,0 +1,210 @@
+<html>
+<head>
+<style>
+
+.dmenu{
+position:absolute;
+left:600px;
+top:120px;
+}
+
+.dmenu a{
+background-color:powderblue;
+color:white;
+padding:10px;
+border-radius:10px;
+border-width:3px;
+border-style:solid;
+text-decoration:none;
+display:block;
+margin:10px;
+width:100px;
+}
+
+
+.dmenu ul{
+list-style:none;
+
+}
+
+
+
+
+.ymenu{
+position:absolute;
+width:900px;
+
+}
+
+.ymenu a{
+background-color:powderblue;
+color:white;
+padding:10px;
+border-radius:10px;
+border-width:3px;
+border-style:solid;
+text-decoration:none;
+display:block;
+width:70px;
+}
+
+.ymenu a:hover{
+background-color:white;
+color:red;
+border-color:powderblue;
+display:block;
+}
+
+.ymenu ul{
+list-style:none;
+}
+
+
+.ymenu li{
+position:relative;
+float:left;
+margin:10px;
+}
+
+.ymenu li ul{
+display:none;
+padding:10px;
+border-radius:10px;
+border-width:3px;
+border-style:solid;
+float:left;
+}
+
+.ymenu li ul:hover{
+margin:1px;
+}
+
+.ymenu li:hover ul{
+display:block;
+position:absolute;
+margin:1px;
+padding:1px;
+}
+
+
+
+.body{
+background-position:fixed;
+background-image:url('resim/arkaplan.jpg');
+}
+
+.header{
+position:absolute;
+top:70px;
+left:400px;
+font-family:'Comic Sans Ms';
+text-align:center;
+font-width:boldy;
+color:white;
+}
+
+
+.icerik{
+position:absolute;
+top:130px;
+left:50px;
+width:550px;
+height:600px;
+background-color:#fffacd;
+}
+
+.emoji{
+background-color:white;
+background-image:url('resim/once.jpg');
+background-position:center center;
+background-repeat:no-repeat;
+height:100%;
+width:75px;
+top:0px;
+opacity:0.5;
+}
+
+.emoji:hover{
+background-image:url('resim/sonra.jpg');
+background-repeat:repeat-y;
+opacity:1;
+}
+
+
+
+
+
+.iletisim{
+position:absolute;
+left:650px;
+top:450px;
+
+}
+
+.icon{
+width:50px;
+height:50px;
+}
+
+.icon:hover{
+width:75px;
+height:75px;
+}
+
+</style>
+</head>
+<body class="body">
+
+<div class="emoji">
+
+</div>
+
+
+<div class="header">
+WEB TASARIM VE PROGRAMLAMA DERSİ<br>1.DÖNEM 2.UYGULAMA YAZILISI ÖĞRENCİ ADI SOYADI SINIF NOSU
+<div>
+
+
+<div class="icerik">
+<iframe name=cerceve width=100% height=100%>
+</iframe>
+</div>
+
+
+
+<div class="ymenu">
+
+<ul>
+<li><a target="cerceve" href="div.html">Div</a>
+<li><a target="cerceve" href="renk.html">Renk</a>
+<li><a target="cerceve" href="zindex.html">Z-İndex</a>
+<li><a target="cerceve" href="kenarlık.html">Kenarlık</a>
+<li><a target="cerceve" href="iletisim.html">İletisim</a>
+	<ul>
+		<li><a href="#">Telefon</a>
+		<li><a href="#">Fax</a>
+		<li><a href="#">E-Mail</a>
+		<li><a href="#">Map</a>
+	</ul>
+</ul>
+</div>
+
+
+<div class="dmenu">
+
+<ul>
+<li><a target="cerceve" href="elektronik.pdf">PDF</a>
+<li><a target="cerceve" href="tablo.html">TABLO</a>
+<li><a target="cerceve" href="float.html">FLOAT</a>
+<li><a target="cerceve" href="liste.html">LİSTE</a>
+</ul>
+</div>
+
+<div class="iletisim">
+<img class="icon" src="resim/icon1.png" width=50 height=50>
+<img class="icon" src="resim/icon2.png" width=50 height=50>
+<img class="icon" src="resim/icon3.png" width=50 height=50>
+
+</div>
+</body>
+</html>
